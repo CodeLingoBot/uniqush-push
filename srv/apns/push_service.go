@@ -223,7 +223,7 @@ func (ps *pushService) waitResults(psp *push.PushServiceProvider, dpList []*push
 	}
 }
 
-// Returns a JSON APNs payload, for a dummy device token
+// Preview returns a JSON APNs payload, for a dummy device token
 func (ps *pushService) Preview(notif *push.Notification) ([]byte, push.Error) {
 	return toAPNSPayload(notif)
 }
